@@ -9,35 +9,71 @@
 <body>
   <div class="container">
 
-     <div class="nav">
+    <div class="nav">
       <a href="index.html">About Me</a>
       <a href="games.html">Games</a>
       <a href="other.html">Other Projects</a>
       <a href="contact.html">Contact</a>
     </div>
 
-
     <div class="card">
       <h2>Games</h2>
 
-      <b>지앤아이소프트 – Unity Client Developer</b><br>
-      <span class="muted">2025.06 – 현재</span>
-      <div class="project">
-        - 모바일 MMORPG 클라이언트 개발 및 라이브 이슈 대응<br>
-        - AssetBundle → Addressables 전환 / 리소스 로딩 구조 개선<br>
-        - 배치파일 기반 APK/AAB 및 번들 빌드 자동화 파이프라인 구축
+      <div class="accordion-item">
+        <button class="accordion-btn" type="button">
+          지앤아이소프트 – Unity Client Developer
+        </button>
+        <div class="accordion-content">
+          <span class="muted">2025.06 – 현재</span>
+
+          <div class="project">
+            - 모바일 MMORPG 클라이언트 개발 및 라이브 이슈 대응<br>
+            - AssetBundle → Addressables 전환 / 리소스 로딩 구조 개선<br>
+            - 배치파일 기반 APK/AAB 및 번들 빌드 자동화 파이프라인 구축
+          </div>
+
+          <div class="sub-list">
+            <div class="sub-item">조선협객전2M</div>
+            <div class="sub-item">메틴M - 파멸의 서곡</div>
+            <div class="sub-item">신규 프로젝트</div>
+          </div>
+        </div>
       </div>
 
       <hr>
 
-      <b>방치형 수집 RPG (Google Play 출시)</b><br>
-      <span class="muted">개인 개발</span>
-      <div class="project">
-        - 카드 수집/성장 시스템 설계 및 구현<br>
-        - 인앱결제(IAP) / 광고(Ads) 기반 수익화 적용
+      <div class="accordion-item">
+        <button class="accordion-btn" type="button">
+          개인 프로젝트
+        </button>
+        <div class="accordion-content">
+          <span class="muted">개인 개발</span>
+
+          <div class="project">
+            - 카드 수집/성장 시스템 설계 및 구현<br>
+            - 인앱결제(IAP) / 광고(Ads) 기반 수익화 적용
+          </div>
+
+          <div class="sub-list">
+            <div class="sub-item">수레크로니클 - 방치형 RPG</div>
+            <div class="sub-item">수레크로니클 Re:Forge (리빌드 프로젝트)</div>
+          </div>
+        </div>
       </div>
     </div>
 
   </div>
+
+  <script>
+    const accordionButtons = document.querySelectorAll('.accordion-btn');
+
+    accordionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.classList.toggle('open');
+        button.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
