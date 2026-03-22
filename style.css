@@ -126,23 +126,23 @@ hr{border:1px solid #30363d;margin:14px 0}
 
 /* 배경 이미지 */
 .bg-chosun {
-  background-image: url("images/chosun2m.jpg");
+  background-image: url("images/chosun2m.png");
 }
 
 .bg-metin {
-  background-image: url("images/metinm.jpg");
+  background-image: url("images/metinm.png");
 }
 
 .bg-newproject {
-  background-image: url("images/newproject.jpg");
+  background-image: url("images/newproject.png");
 }
 
 .bg-surae {
-  background-image: url("images/surae.jpg");
+  background-image: url("images/surae.png");
 }
 
 .bg-reforge {
-  background-image: url("images/surae-reforge.jpg");
+  background-image: url("images/surae-reforge.png");
 }
 
 @media (max-width: 720px) {
