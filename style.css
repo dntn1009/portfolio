@@ -33,7 +33,7 @@ hr{border:1px solid #30363d;margin:14px 0}
 }
 
 .accordion-item {
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 .accordion-btn {
@@ -41,11 +41,11 @@ hr{border:1px solid #30363d;margin:14px 0}
   background: #0d1117;
   color: #c9d1d9;
   border: 1px solid #30363d;
-  border-radius: 10px;
-  padding: 14px 16px;
+  border-radius: 12px;
+  padding: 16px 18px;
   text-align: left;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   cursor: pointer;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
@@ -58,11 +58,11 @@ hr{border:1px solid #30363d;margin:14px 0}
 
 .accordion-content {
   display: none;
-  margin-top: 12px;
-  padding: 16px;
+  margin-top: 14px;
+  padding: 18px;
   background: #0d1117;
   border: 1px solid #30363d;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .accordion-content.open {
@@ -70,16 +70,92 @@ hr{border:1px solid #30363d;margin:14px 0}
 }
 
 .sub-list {
-  margin-top: 18px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
-.sub-item {
-  padding: 10px 14px;
-  background: #161b22;
+/* 이미지 카드형 프로젝트 */
+.image-list {
+  gap: 16px;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 160px;
+  padding: 20px;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
   border: 1px solid #30363d;
-  border-radius: 8px;
-  color: #c9d1d9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.72) 0%,
+    rgba(0,0,0,0.45) 45%,
+    rgba(0,0,0,0.20) 100%
+  );
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: #58a6ff;
+}
+
+.project-card-title {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.55);
+}
+
+/* 배경 이미지 */
+.bg-chosun {
+  background-image: url("images/chosun2m.jpg");
+}
+
+.bg-metin {
+  background-image: url("images/metinm.jpg");
+}
+
+.bg-newproject {
+  background-image: url("images/newproject.jpg");
+}
+
+.bg-surae {
+  background-image: url("images/surae.jpg");
+}
+
+.bg-reforge {
+  background-image: url("images/surae-reforge.jpg");
+}
+
+@media (max-width: 720px) {
+  .accordion-btn {
+    font-size: 18px;
+  }
+
+  .project-card {
+    min-height: 130px;
+    padding: 16px;
+  }
+
+  .project-card-title {
+    font-size: 22px;
+  }
 }
