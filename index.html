@@ -1,195 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>정수현 | Unity Client Developer</title>
-
-<style>
-/* Base */
-body{font-family:Segoe UI, sans-serif;background:#0d1117;color:#c9d1d9;margin:0}
-.container{max-width:1000px;margin:auto;padding:40px}
-.card{background:#161b22;padding:25px;border-radius:12px;margin-bottom:20px;box-shadow:0 0 10px rgba(0,0,0,0.3)}
-h1,h2{color:#58a6ff;margin:0 0 12px 0}
-p{line-height:1.6;margin:0}
-a{color:#58a6ff;text-decoration:none}
-a:hover{text-decoration:underline}
-.project{margin-top:12px}
-.muted{color:#8b949e}
-
-/* Header/Profile */
-.profile{display:flex;align-items:center;gap:25px}
-.profile-img{
-  width:140px;height:160px;border-radius:10px;
-  object-fit:cover;border:2px solid #58a6ff;
-}
-
-/* Badges */
-.badge{display:inline-block;background:#238636;color:white;padding:5px 10px;border-radius:8px;font-size:13px}
-.badge-wrap{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-
-/* Top Nav */
-.nav{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-.nav a{
-  color:#c9d1d9;text-decoration:none;padding:8px 12px;
-  border:1px solid #30363d;border-radius:10px
-}
-.nav a:hover{border-color:#58a6ff}
-
-/* Tabs */
-.tabs{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
-.tab-btn{
-  background:#0d1117;color:#c9d1d9;border:1px solid #30363d;
-  padding:8px 12px;border-radius:10px;cursor:pointer
-}
-.tab-btn.active{border-color:#58a6ff;color:#58a6ff}
-.tab-panel{display:none;margin-top:14px}
-.tab-panel.active{display:block}
-
-/* Divider */
-hr{border:1px solid #30363d;margin:14px 0}
-
-/* Responsive */
-@media (max-width: 720px){
-  .container{padding:18px}
-  .profile{flex-direction:column;align-items:flex-start}
-  .profile-img{width:160px;height:180px}
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>정수현 | Unity Client Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-<div class="container">
+  <div class="container">
 
-  <!-- Top navigation -->
- <div class="nav">
-  <a href="about.html">About Me</a>
-  <a href="games.html">Games</a>
-  <a href="other.html">Other Projects</a>
-  <a href="contact.html">Contact</a>
-</div>
-
-  <!-- Header -->
-  <div class="card profile">
-    <img src="images/profile.jpg" class="profile-img" alt="profile" />
-    <div>
-      <h1>정수현 | Unity Client Developer 🎮</h1>
-
-      <div class="badge-wrap">
-        <span class="badge">Unity 2022 / 6000.3</span>
-        <span class="badge">Addressables · AssetBundle</span>
-        <span class="badge">Build & Bundle Automation</span>
-        <span class="badge">Game Client Development</span>
-        <span class="badge">Live Service</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- About -->
-  <div class="card" id="about">
-    <h2>About Me</h2>
-    <p>
-      Unity 기반 모바일 게임 클라이언트 개발자로,<br>
-      MMORPG 라이브 서버 운영 및 출시 경험을 보유하고 있습니다.<br>
-      실제 서비스 중인 게임의 AssetBundle 구조를 Addressables 기반으로 전환하여<br>
-      리소스 로딩 구조를 개선하고, 배치파일과 Unity 기능을 활용해<br>
-      APK/AAB 및 번들 자동화 파이프라인을 구축했습니다.<br><br>
-
-      개인 개발로는 방치형 수집 RPG 장르의 모바일 게임을 Google Play에 출시하여<br>
-      카드 수집 및 성장 시스템, 인앱결제와 광고를 포함한 수익화 구조를 직접 설계·구현한 경험이 있습니다.
-    </p>
-  </div>
-
-  <!-- Games (tabs: Company / Personal) -->
-  <div class="card" id="games">
-    <h2>Games</h2>
-
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="company" type="button">Company</button>
-      <button class="tab-btn" data-tab="personal" type="button">Personal</button>
+    <div class="nav">
+      <a href="about.html">About Me</a>
+      <a href="games.html">Games</a>
+      <a href="other.html">Other Projects</a>
+      <a href="contact.html">Contact</a>
     </div>
 
-    <div class="tab-panel active" id="tab-company">
-      <b>지앤아이소프트 – Unity Client Developer</b><br>
-      <span class="muted">2025.06 – 현재</span>
-      <div class="project">
-        - 모바일 MMORPG 클라이언트 개발 및 라이브 이슈 대응<br>
-        - AssetBundle → Addressables 전환 / 리소스 로딩 구조 개선<br>
-        - 배치파일 기반 APK/AAB 및 번들 빌드 자동화 파이프라인 구축
+    <div class="card profile">
+      <img src="images/profile.jpg" class="profile-img" alt="profile" />
+      <div>
+        <h1>정수현 | Unity Client Developer 🎮</h1>
+
+        <div class="badge-wrap">
+          <span class="badge">Unity 2022 / 6000.2</span>
+          <span class="badge">Addressables · AssetBundle</span>
+          <span class="badge">Build & Bundle Automation</span>
+          <span class="badge">Game Client Development</span>
+          <span class="badge">Live Service</span>
+        </div>
       </div>
     </div>
 
-    <div class="tab-panel" id="tab-personal">
-      <b>방치형 수집 RPG (Google Play 출시)</b><br>
-      <span class="muted">개인 개발</span>
-      <div class="project">
-        - 카드 수집/성장 시스템 설계 및 구현<br>
-        - 인앱결제(IAP) / 광고(Ads) 기반 수익화 적용
-      </div>
-    </div>
-  </div>
-
-  <!-- Other Projects -->
-  <div class="card" id="other">
-    <h2>Other Projects</h2>
-
-    <div class="project">
-      <b>⚙️ Asset / Bundle Automation Tools</b><br>
-      <span class="muted">내부 빌드 편의성과 안정성을 높이기 위한 자동화 도구</span><br>
-      - 배치파일 기반 빌드/번들 생성 프로세스 자동화<br>
-      - 리소스 구조 정리 및 반복 작업 최소화
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>
+        Unity 기반 모바일 게임 클라이언트 개발자 정수현의 포트폴리오입니다.<br>
+        상단 메뉴를 통해 상세 내용을 확인할 수 있습니다.
+      </p>
     </div>
 
-    <div class="project">
-      <b>🧩 Warriors Quest</b><br>
-      - FSM 몬스터, 퀘스트 시스템, 미니맵
-    </div>
-
-    <div class="project">
-      <b>🏯 Surae Chronicle</b><br>
-      - 방치형 시스템, 카드/히어로 성장, Firebase Realtime DB
-    </div>
   </div>
-
-  <!-- Experience (simple: company + 기간 only) -->
-  <div class="card" id="experience">
-    <h2>Professional Experience</h2>
-
-    <b>지앤아이소프트 – Unity Client Developer</b><br>
-    <span class="muted">2025.06 – 현재</span>
-
-    <hr>
-
-    <b>오토비즈시스템즈 – Embedded Software Engineer (Automotive ECU)</b><br>
-    <span class="muted">2020.11 – 2021.06</span>
-  </div>
-
-  <!-- Contact -->
-  <div class="card" id="contact">
-    <h2>Contact</h2>
-    <p>
-      GitHub: <a href="https://github.com/dntn1009">github.com/dntn1009</a><br>
-      Email: <a href="mailto:dntn1009@daum.net">dntn1009@daum.net</a>
-    </p>
-  </div>
-
-</div>
-
-<script>
-  // Tabs
-  const btns = document.querySelectorAll('.tab-btn');
-  const panels = {
-    company: document.getElementById('tab-company'),
-    personal: document.getElementById('tab-personal')
-  };
-
-  btns.forEach(b => b.addEventListener('click', () => {
-    btns.forEach(x => x.classList.remove('active'));
-    Object.values(panels).forEach(p => p.classList.remove('active'));
-
-    b.classList.add('active');
-    panels[b.dataset.tab].classList.add('active');
-  }));
-</script>
 </body>
 </html>
