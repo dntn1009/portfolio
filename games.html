@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Games | 정수현</title>
+  <title>Featured Projects | 정수현</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,19 +11,20 @@
 
     <div class="nav">
       <a href="index.html">About Me</a>
-      <a href="games.html">Games</a>
+      <a href="games.html">Featured Projects</a>
       <a href="other.html">Other Projects</a>
       <a href="contact.html">Contact</a>
     </div>
 
     <div class="card">
-      <h2>Games</h2>
+      <h2>Featured Projects</h2>
 
+      <!-- 회사 -->
       <div class="accordion-item">
-        <button class="accordion-btn" type="button">
+        <button class="accordion-btn active" type="button">
           지앤아이소프트 – Unity Client Developer
         </button>
-        <div class="accordion-content">
+        <div class="accordion-content open">
           <span class="muted">2025.06 – 현재</span>
 
           <div class="project">
@@ -32,31 +33,53 @@
             - 배치파일 기반 APK/AAB 및 번들 빌드 자동화 파이프라인 구축
           </div>
 
-          <div class="sub-list">
-            <div class="sub-item">조선협객전2M</div>
-            <div class="sub-item">메틴M - 파멸의 서곡</div>
-            <div class="sub-item">신규 프로젝트</div>
+          <div class="sub-list image-list">
+            <a href="chosun2m.html" class="project-card bg-chosun">
+              <span class="project-card-title">조선협객전2M</span>
+            </a>
+
+            <a href="metinm.html" class="project-card bg-metin">
+              <span class="project-card-title">메틴M - 파멸의 서곡</span>
+            </a>
+
+            <a href="newproject.html" class="project-card bg-newproject">
+              <span class="project-card-title">신규 프로젝트</span>
+            </a>
           </div>
         </div>
       </div>
 
       <hr>
 
+      <!-- 개인 -->
       <div class="accordion-item">
         <button class="accordion-btn" type="button">
-          개인 프로젝트
+          개인 프로젝트 – Unity Client Developer
         </button>
         <div class="accordion-content">
           <span class="muted">개인 개발</span>
 
           <div class="project">
+            - Unity 기반 모바일 게임 설계 및 클라이언트 개발<br>
             - 카드 수집/성장 시스템 설계 및 구현<br>
             - 인앱결제(IAP) / 광고(Ads) 기반 수익화 적용
           </div>
 
-          <div class="sub-list">
-            <div class="sub-item">수레크로니클 - 방치형 RPG</div>
-            <div class="sub-item">수레크로니클 Re:Forge (리빌드 프로젝트)</div>
+          <div class="sub-list image-list">
+            <a href="surae-chronicle.html" class="project-card bg-surae">
+              <span class="project-card-title">수레크로니클 - 방치형 RPG</span>
+            </a>
+
+            <a href="surae-chronicle-reforge.html" class="project-card bg-reforge">
+              <span class="project-card-title">수레크로니클 Re:Forge</span>
+            </a>
+          </div>
+
+          <div class="project" style="margin-top:16px;">
+            <span class="muted">
+              Re:Forge는 기존 수레크로니클을 기반으로 구조와 리소스 관리 방식을 재정비하며,
+              확장성과 유지보수성을 강화한 업그레이드 버전입니다.
+            </span>
           </div>
         </div>
       </div>
